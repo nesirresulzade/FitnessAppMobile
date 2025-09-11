@@ -21,10 +21,19 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "permissions": ["android.permission.READ_MEDIA_IMAGES", "READ_EXTERNAL_STORAGE"]
+      "permissions": [
+        "android.permission.READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.resulzade.fitness"
     },
     "web": {
       "favicon": "./assets/splash.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5f5fbee8-f087-41b1-9304-c21875a8224b"
+      }
     }
   }
 }
