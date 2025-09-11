@@ -42,6 +42,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
+  nameLabel: {
+    color: '#333',
+    fontSize: 14,
+    fontWeight: '700'
+  },
   avatar: {
     width: 44,
     height: 44,

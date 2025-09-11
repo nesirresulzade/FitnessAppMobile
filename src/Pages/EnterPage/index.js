@@ -97,7 +97,7 @@ export default function Index({ navigation }) {
           <Animated.View style={buttonAnimatedStyle}>
             <TouchableOpacity 
               style={styles.getStartedButton}
-              onPress={() => navigation.navigate('HomePage')}
+              onPress={() => navigation.navigate('LoginPage')}
             >
               <Text style={styles.buttonText}>Get Started</Text>
             </TouchableOpacity>
