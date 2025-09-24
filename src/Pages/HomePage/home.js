@@ -28,10 +28,10 @@ export default function Home({ navigation }) {
     return unsub
   }, [])
   const exerciseData = [
-    { name: 'back', image: require('../../../assets/imgs/home1.avif') },
+    { name: 'back', image: require('../../../assets/imgs/newImg.jpg') },
     { name: 'cardio', image: require('../../../assets/imgs/home3.jpeg') },
     { name: 'chest', image: require('../../../assets/imgs/home2.jpeg') },
-    { name: 'legs', image: require('../../../assets/imgs/home1.avif') },
+    { name: 'legs', image: require('../../../assets/imgs/newImg.jpg') },
   ]
 
   const handleCardPress = (exercise) => {
@@ -63,8 +63,8 @@ export default function Home({ navigation }) {
             >
               {profile?.photoURL || auth.currentUser?.photoURL ? (
                 <Image source={{ uri: profile?.photoURL || auth.currentUser?.photoURL }} style={styles.avatar} />
-              ) : (
-                <Image source={require('../../../assets/imgs/home1.avif')} style={styles.avatar} />
+            ) : (
+              <Image source={require('../../../assets/imgs/newImg.jpg')} style={styles.avatar} />
               )}
               {!!profile?.displayName && (
                 <Text style={styles.nameLabel} numberOfLines={1}>
@@ -95,7 +95,7 @@ export default function Home({ navigation }) {
           }}
           data={[
             require('../../../assets/imgs/home2.jpeg'),
-            require('../../../assets/imgs/home1.avif'),
+            require('../../../assets/imgs/newImg.jpg'),
             require('../../../assets/imgs/home3.jpeg'),
           ]}
           renderItem={({ item }) => (

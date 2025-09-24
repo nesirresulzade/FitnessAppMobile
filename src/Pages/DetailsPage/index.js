@@ -30,7 +30,7 @@ export default function DetailsPage({ route, navigation }) {
       { 
         id: 'back-1', 
         name: 'Pull-ups', 
-        image: require('../../../assets/imgs/home1.avif'),
+        image: require('../../../assets/imgs/newImg.jpg'),
         description: 'Hanging from a bar and lifting your own body weight. Strengthens back muscles.',
         sets: '3-4 sets',
         reps: '8-12 reps',
@@ -92,7 +92,7 @@ export default function DetailsPage({ route, navigation }) {
       { 
         id: 'legs-1', 
         name: 'Squats', 
-        image: require('../../../assets/imgs/home1.avif'),
+        image: require('../../../assets/imgs/newImg.jpg'),
         description: 'Basic leg movement. Works all leg muscles.',
         sets: '3-4 sets',
         reps: '12-20 reps',
@@ -154,7 +154,7 @@ export default function DetailsPage({ route, navigation }) {
       { 
         id: 'chest-1', 
         name: 'Push-ups', 
-        image: require('../../../assets/imgs/home1.avif'),
+        image: require('../../../assets/imgs/newImg.jpg'),
         description: 'Pushing movement on the ground. Strengthens chest muscles.',
         sets: '3-4 sets',
         reps: '10-20 reps',
@@ -216,7 +216,7 @@ export default function DetailsPage({ route, navigation }) {
       { 
         id: 'cardio-1', 
         name: 'Jumping Jacks', 
-        image: require('../../../assets/imgs/home1.avif'),
+        image: require('../../../assets/imgs/newImg.jpg'),
         description: 'Jumping movement in place. Perfect for general cardio.',
         sets: '3-4 sets',
         reps: '30-60 seconds',
