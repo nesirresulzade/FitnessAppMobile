@@ -7,26 +7,44 @@ import Home from "./src/Pages/HomePage/home";
 import DetailsPage from "./src/Pages/DetailsPage";
 import Login from "./src/Pages/Auth/Login";
 import Signup from "./src/Pages/Auth/Signup";
+import LoadingComponent from "./src/Components/LoadingComponent";
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
 import Toast from 'react-native-toast-message';
 
 const Stack = createStackNavigator();
 
+
 export default function App() {
   const [initializing, setInitializing] = useState(true)
   const [user, setUser] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => {
       setUser(u || null)
-      if (initializing) setInitializing(false)
+      if (initializing) {
+        setInitializing(false)
+        // Eğer kullanıcı login ise loading göster
+        if (u) {
+          setIsLoading(true)
+          // 2 saniye sonra loading'i kapat
+          setTimeout(() => {
+            setIsLoading(false)
+          }, 2000)
+        }
+      }
     })
     return unsub
   }, [initializing])
 
   if (initializing) {
     return null
+  }
+
+  // Loading ekranını göster
+  if (isLoading) {
+    return <LoadingComponent message="Your account is checked..." />
   }
 
   return (
